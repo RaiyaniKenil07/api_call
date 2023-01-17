@@ -18,15 +18,14 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.teal,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'API Demo Page', key: UniqueKey()),
+      home: MyHomePage(title: 'API Demo Page'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({required Key key, required this.title}) : super(key: key);
-
   final String title;
+  const MyHomePage({required this.title});
 
   @override
   _MyHomePageState createState() => _MyHomePageState();

@@ -17,6 +17,10 @@ class User {
         title = json['title'] as String?,
         body = json['body'] as String?;
 
-  Map<String, dynamic> toJson() =>
-      {'userId': userId, 'id': id, 'title': title, 'body': body};
+  Map<String, dynamic> toJson() => {
+        'userId': userId,
+        'id': id,
+        'title': title,
+        'body': body,
+      };
 }
